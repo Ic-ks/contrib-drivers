@@ -87,7 +87,7 @@ public class Ws2812b implements AutoCloseable {
 
     private void initSpiDevice(SpiDevice device) throws IOException {
 
-        double durationOfOneBitInNs = 417.0;
+        double durationOfOneBitInNs = 290.0;
         double durationOfOneBitInS = durationOfOneBitInNs * Math.pow(10, -9);
         int frequencyInHz = (int) Math.round(1.0 / durationOfOneBitInS);
 
